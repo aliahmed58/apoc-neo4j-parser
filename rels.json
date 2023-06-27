@@ -1,0 +1,658 @@
+{
+    "AWSAccount": [
+        {
+            "type": "relationship",
+            "id": "0",
+            "label": "RESOURCE",
+            "firstseen": 1687776917870,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "2",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "1",
+            "label": "RESOURCE",
+            "firstseen": 1687776926859,
+            "lastupdated": 1687778360,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "3",
+            "end_labels": [
+                "S3Bucket"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "3",
+            "label": "RESOURCE",
+            "firstseen": 1687847873216,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "7",
+            "end_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "5",
+            "label": "RESOURCE",
+            "firstseen": 1687847873437,
+            "lastupdated": "",
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "8",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "6",
+            "label": "RESOURCE",
+            "firstseen": 1687847873503,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "9",
+            "end_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "8",
+            "label": "RESOURCE",
+            "firstseen": 1687847873527,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "11",
+            "end_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "10",
+            "label": "RESOURCE",
+            "firstseen": 1687847873553,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "13",
+            "end_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "12",
+            "label": "RESOURCE",
+            "firstseen": 1687847873575,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "15",
+            "end_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "14",
+            "label": "RESOURCE",
+            "firstseen": 1687847873596,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "17",
+            "end_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "41",
+            "label": "RESOURCE",
+            "firstseen": 1687848044216,
+            "lastupdated": 1687848009,
+            "start_id": "1",
+            "start_labels": [
+                "AWSAccount"
+            ],
+            "end_id": "45",
+            "end_labels": [
+                "DynamoDBTable"
+            ]
+        }
+    ],
+    "S3Bucket": [
+        {
+            "type": "relationship",
+            "id": "2",
+            "label": "POLICY_STATEMENT",
+            "firstseen": "",
+            "lastupdated": 1687778360,
+            "start_id": "3",
+            "start_labels": [
+                "S3Bucket"
+            ],
+            "end_id": "4",
+            "end_labels": [
+                "S3PolicyStatement"
+            ]
+        }
+    ],
+    "AWSPrincipal": [
+        {
+            "type": "relationship",
+            "id": "4",
+            "label": "TRUSTS_AWS_PRINCIPAL",
+            "firstseen": 1687847873347,
+            "lastupdated": 1687848009,
+            "start_id": "7",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "8",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "7",
+            "label": "TRUSTS_AWS_PRINCIPAL",
+            "firstseen": 1687847873516,
+            "lastupdated": 1687848009,
+            "start_id": "9",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "10",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "9",
+            "label": "TRUSTS_AWS_PRINCIPAL",
+            "firstseen": 1687847873542,
+            "lastupdated": 1687848009,
+            "start_id": "11",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "12",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "11",
+            "label": "TRUSTS_AWS_PRINCIPAL",
+            "firstseen": 1687847873565,
+            "lastupdated": 1687848009,
+            "start_id": "13",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "14",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "13",
+            "label": "TRUSTS_AWS_PRINCIPAL",
+            "firstseen": 1687847873588,
+            "lastupdated": 1687848009,
+            "start_id": "15",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "16",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "15",
+            "label": "TRUSTS_AWS_PRINCIPAL",
+            "firstseen": 1687847873604,
+            "lastupdated": 1687848009,
+            "start_id": "17",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "18",
+            "end_labels": [
+                "AWSPrincipal"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "16",
+            "label": "POLICY",
+            "firstseen": "",
+            "lastupdated": 1687848009,
+            "start_id": "7",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "19",
+            "end_labels": [
+                "AWSPolicy"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "18",
+            "label": "POLICY",
+            "firstseen": "",
+            "lastupdated": 1687848009,
+            "start_id": "9",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "21",
+            "end_labels": [
+                "AWSPolicy"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "20",
+            "label": "POLICY",
+            "firstseen": "",
+            "lastupdated": 1687848009,
+            "start_id": "11",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "23",
+            "end_labels": [
+                "AWSPolicy"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "23",
+            "label": "POLICY",
+            "firstseen": "",
+            "lastupdated": 1687848009,
+            "start_id": "13",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "26",
+            "end_labels": [
+                "AWSPolicy"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "35",
+            "label": "POLICY",
+            "firstseen": "",
+            "lastupdated": 1687848009,
+            "start_id": "15",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "38",
+            "end_labels": [
+                "AWSPolicy"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "39",
+            "label": "POLICY",
+            "firstseen": "",
+            "lastupdated": 1687848009,
+            "start_id": "17",
+            "start_labels": [
+                "AWSPrincipal",
+                "AWSRole"
+            ],
+            "end_id": "42",
+            "end_labels": [
+                "AWSPolicy"
+            ]
+        }
+    ],
+    "AWSPolicy": [
+        {
+            "type": "relationship",
+            "id": "17",
+            "label": "STATEMENT",
+            "firstseen": 1687847888214,
+            "lastupdated": 1687848009,
+            "start_id": "19",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "20",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "19",
+            "label": "STATEMENT",
+            "firstseen": 1687847888291,
+            "lastupdated": 1687848009,
+            "start_id": "21",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "22",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "21",
+            "label": "STATEMENT",
+            "firstseen": 1687847888311,
+            "lastupdated": 1687848009,
+            "start_id": "23",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "24",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "22",
+            "label": "STATEMENT",
+            "firstseen": 1687847888311,
+            "lastupdated": 1687848009,
+            "start_id": "23",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "25",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "24",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "27",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "25",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "28",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "26",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "29",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "27",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "30",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "28",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "31",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "29",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "32",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "30",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "33",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "31",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "34",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "32",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "35",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "33",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "36",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "34",
+            "label": "STATEMENT",
+            "firstseen": 1687847888335,
+            "lastupdated": 1687848009,
+            "start_id": "26",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "37",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "36",
+            "label": "STATEMENT",
+            "firstseen": 1687847888380,
+            "lastupdated": 1687848009,
+            "start_id": "38",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "39",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "37",
+            "label": "STATEMENT",
+            "firstseen": 1687847888380,
+            "lastupdated": 1687848009,
+            "start_id": "38",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "40",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "38",
+            "label": "STATEMENT",
+            "firstseen": 1687847888380,
+            "lastupdated": 1687848009,
+            "start_id": "38",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "41",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "40",
+            "label": "STATEMENT",
+            "firstseen": 1687847888423,
+            "lastupdated": 1687848009,
+            "start_id": "42",
+            "start_labels": [
+                "AWSPolicy"
+            ],
+            "end_id": "43",
+            "end_labels": [
+                "AWSPolicyStatement"
+            ]
+        }
+    ]
+}
